@@ -1812,7 +1812,6 @@ void draw_filled_triangles(const Mesh& mesh,
     // If texture mapping is enabled and the face has valid UVs, render textured
     if (show_texture_mapping && mesh.texture.has_texture() && face.vt0 >= 0 && face.vt1 >= 0 && face.vt2 >= 0) {
       // Compute world positions and normals for textured Phong rasterizer
-      printf("TEXTURE FACE DRAWN\n");
       glm::vec3 world_v0 = glm::vec3(tv0);
       glm::vec3 world_v1 = glm::vec3(tv1);
       glm::vec3 world_v2 = glm::vec3(tv2);
